@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>내손을 java · 계약 도우미</title><link rel="stylesheet" href="/style.css"><script defer src="/app.js"></script></head>
+<body><div class="app-frame">
+<header class="brand"><button data-go="home" class="wordmark">내손을 <em>java</em></button><button data-go="alarms" aria-label="알림 목록">♧ <span id="alarm-count">0</span></button></header>
+<div id="connection" class="notice" hidden></div><main id="view" tabindex="-1"></main>
+<footer>로컬 단일 사용자 시연 · 법률 판단을 대신하지 않습니다</footer>
+<button id="menu-button" class="fab" aria-label="메뉴" aria-expanded="false">☰</button>
+<nav id="menu" hidden aria-label="화면 메뉴"><button data-go="home">⌂ 홈</button><button data-go="upload">＋ 계약 분석</button><button data-go="contracts">▤ 나의 계약</button><button data-go="schedule">▦ 일정</button><button data-go="consult">✧ AI 상담 / 검색</button><button data-go="settings">⚙ 설정</button></nav>
+<div id="toast" role="status" hidden></div>
+<dialog id="event-dialog"><form id="event-form"><h2 id="event-heading">일정 추가</h2><input id="event-id" type="hidden"><label>연결 계약<select id="event-contract"></select></label><label>일정명<input id="event-title" maxlength="120" required></label><label>날짜<input id="event-date" type="date" required></label><label class="inline"><input id="event-alarm" type="checkbox" checked>이 일정 알림</label><label>원문 근거 (날짜를 수정했다면 직접 확인하세요)<textarea id="event-source" readonly rows="3"></textarea></label><p>날짜와 용도는 사용자가 최종 확인합니다. 원문 근거 없는 통보 기한은 자동 계산하지 않습니다.</p><p id="event-error" class="error" role="alert"></p><div class="actions"><button type="button" id="event-cancel" class="secondary">취소</button><button type="submit" id="event-submit">확인 후 등록</button></div></form></dialog>
+</div></body></html>

@@ -1,0 +1,8 @@
+{
+  "name":"naesoneul-java",
+  "version":"1.0.0",
+  "private":true,
+  "description":"선택 사항: 실제 브라우저 흐름 검증용. 앱 실행에는 Node가 필요하지 않습니다.",
+  "scripts":{"test:browser":"node tests/browser.cjs"},
+  "devDependencies":{"playwright":"1.62.1"}
+}

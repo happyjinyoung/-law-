@@ -1,0 +1,259 @@
+{
+  "measured_at_utc": "2026-11-05T06:19:45.675494+00:00",
+  "mode": "demo / local rules",
+  "environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "processor": "Intel64 Family 6 Model 189 Stepping 1, GenuineIntel"
+  },
+  "documents": 12,
+  "data_disclosure": {
+    "kind": "독립 파일의 소규모 합성 평가 세트",
+    "used_to_design_rules": false,
+    "disclosure": "규칙 초안을 작성한 다음 만든 12문서 합성 세트입니다. 작성자가 규칙을 알고 구성했으므로 독립 전문가 블라인드 검증이 아닙니다. 결과를 본 뒤 규칙을 조정하면 개발 세트로 재분류해야 합니다."
+  },
+  "date_metric_unit": "문서별 고유 ISO 날짜 집합. 같은 날짜의 반복 언급은 1개로 계산.",
+  "dates": {
+    "tp": 11,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "checks": {
+    "renewal": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.6667,
+      "f1": 0.8
+    },
+    "termination": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "penalty": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "unilateral": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.6667,
+      "f1": 0.8
+    },
+    "refund": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.6667,
+      "f1": 0.8
+    }
+  },
+  "checks_micro": {
+    "tp": 12,
+    "fp": 0,
+    "fn": 3,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1": 0.8889
+  },
+  "evidence": {
+    "exact_match": 70,
+    "total": 70,
+    "ratio": 1.0
+  },
+  "time_ms": {
+    "mean": 0.2262,
+    "median": 0.0855,
+    "max": 1.5049,
+    "total": 2.7149
+  },
+  "time_scope": "1회 실행, 규칙 분석만 측정. PDF·OCR·HTTP·AI·저장 시간은 포함하지 않음.",
+  "limitations": "소규모 합성 세트이며 실제 계약 성능으로 일반화할 수 없음. 인용 존재 검사는 설명의 의미적 정확성을 증명하지 않음.",
+  "details": [
+    {
+      "id": "e01",
+      "predicted_dates": [
+        "2028-02-01",
+        "2028-08-31"
+      ],
+      "gold_dates": [
+        "2028-02-01",
+        "2028-08-31"
+      ],
+      "predicted_checks": [
+        "renewal"
+      ],
+      "gold_checks": [
+        "renewal"
+      ]
+    },
+    {
+      "id": "e02",
+      "predicted_dates": [
+        "2028-03-07"
+      ],
+      "gold_dates": [
+        "2028-03-07"
+      ],
+      "predicted_checks": [
+        "penalty",
+        "termination"
+      ],
+      "gold_checks": [
+        "termination",
+        "penalty"
+      ]
+    },
+    {
+      "id": "e03",
+      "predicted_dates": [
+        "2028-04-12"
+      ],
+      "gold_dates": [
+        "2028-04-12"
+      ],
+      "predicted_checks": [
+        "unilateral"
+      ],
+      "gold_checks": [
+        "unilateral"
+      ]
+    },
+    {
+      "id": "e04",
+      "predicted_dates": [
+        "2028-05-20"
+      ],
+      "gold_dates": [
+        "2028-05-20"
+      ],
+      "predicted_checks": [
+        "refund"
+      ],
+      "gold_checks": [
+        "refund"
+      ]
+    },
+    {
+      "id": "e05",
+      "predicted_dates": [
+        "2028-06-03"
+      ],
+      "gold_dates": [
+        "2028-06-03"
+      ],
+      "predicted_checks": [],
+      "gold_checks": []
+    },
+    {
+      "id": "e06",
+      "predicted_dates": [],
+      "gold_dates": [],
+      "predicted_checks": [
+        "termination"
+      ],
+      "gold_checks": [
+        "termination"
+      ]
+    },
+    {
+      "id": "e07",
+      "predicted_dates": [],
+      "gold_dates": [],
+      "predicted_checks": [],
+      "gold_checks": []
+    },
+    {
+      "id": "e08",
+      "predicted_dates": [
+        "2029-01-31"
+      ],
+      "gold_dates": [
+        "2029-01-31"
+      ],
+      "predicted_checks": [
+        "penalty",
+        "renewal"
+      ],
+      "gold_checks": [
+        "renewal",
+        "penalty"
+      ]
+    },
+    {
+      "id": "e09",
+      "predicted_dates": [
+        "2029-04-09",
+        "2029-04-15"
+      ],
+      "gold_dates": [
+        "2029-04-09",
+        "2029-04-15"
+      ],
+      "predicted_checks": [
+        "refund",
+        "unilateral"
+      ],
+      "gold_checks": [
+        "refund",
+        "unilateral"
+      ]
+    },
+    {
+      "id": "e10",
+      "predicted_dates": [
+        "2029-09-03"
+      ],
+      "gold_dates": [
+        "2029-09-03"
+      ],
+      "predicted_checks": [
+        "penalty"
+      ],
+      "gold_checks": [
+        "penalty"
+      ]
+    },
+    {
+      "id": "e11",
+      "predicted_dates": [],
+      "gold_dates": [],
+      "predicted_checks": [],
+      "gold_checks": [
+        "renewal",
+        "unilateral"
+      ]
+    },
+    {
+      "id": "e12",
+      "predicted_dates": [
+        "2029-12-05"
+      ],
+      "gold_dates": [
+        "2029-12-05"
+      ],
+      "predicted_checks": [
+        "termination"
+      ],
+      "gold_checks": [
+        "termination",
+        "refund"
+      ]
+    }
+  ]
+}

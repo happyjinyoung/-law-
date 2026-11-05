@@ -1,0 +1,34 @@
+{
+  "source": "일로와.zip",
+  "files": [
+    {
+      "path": "css/style.css",
+      "bytes": 5846,
+      "sha256": "2105482c2cc49a156c050dcc2f6a1a67159759351f0285b3c82220f3825392aa"
+    },
+    {
+      "path": "index.html",
+      "bytes": 65462,
+      "sha256": "3c4edafe3fcc60add25c1dd5445bdc3decd6df70e2b2315d4f333f0899847b72",
+      "original_sha256": "5c877882310a619aa310ae96e03bb98ad4484873e8295079e30567617eb28b13",
+      "original_bytes": 65187,
+      "change": "사용자 요청에 따라 화면 숨김 CSS fallback만 head에 추가. 기존 내용·JS는 보존."
+    },
+    {
+      "path": "js/analyzer.js",
+      "bytes": 9905,
+      "sha256": "1dba6e04a24653af4a857bb6f482576d391d64a1c3327ea908ac72046d50137e"
+    },
+    {
+      "path": "js/app.js",
+      "bytes": 48224,
+      "sha256": "e1173a7a6ee640fd423d6c53dad51ca24cc67939ba8ad816beed008460c3198e"
+    },
+    {
+      "path": "js/rules.js",
+      "bytes": 9135,
+      "sha256": "fb5e1d378af6de380c51393fcf0a87f31956f418f618c90b1f9f8b312780671e"
+    }
+  ],
+  "policy": "원본 4개는 바이트 보존. index.html은 화면 분리 CSS fallback만 추가. sha256은 현재 배포본 무결성 기준."
+}
